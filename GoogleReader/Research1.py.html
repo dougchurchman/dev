@@ -1,0 +1,193 @@
+<html>
+<head><title>GReader - Python - Research</title></head>
+<body>
+<pre>
+# -*- coding: utf-8 -*-
+import sys
+import os
+import json
+import pprint
+import codecs
+import datetime
+import random
+
+from mako.template import Template
+
+def render_header() :
+    headerString = '''
+    <html><head>
+    <link rel='stylesheet' type='text/css' href='bootstrap2.css'>
+    <style>
+    body { 
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #222222;
+    background-color: #ffffff;} 
+    .container { width: 940px; margin-left: auto; margin-right: auto;} 
+    .alternatelook { background-color: #eeeeee }
+    .item { padding: 10px; }
+    .row {
+    margin-top: 10px;
+    border-left: 1px solid black;
+    }
+    .comment {
+    font-family: consolas, sans-serif;
+    font-size: 16px;
+    background-color: #e0e0ff;
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+    .annotation {
+    font-family: proxima, sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+    background-color: #c0c0dd;
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 50px;
+    }
+    </style>
+    </head><body><div class='container'>
+    '''
+    return headerString
+
+def render_footer() :
+    footerString = "</div></body></html>"
+    return footerString
+
+# sharedby = sharedby.decode("utf-8")
+def render_item(readerItem=None, ItemNumber=0) :
+    CommentString = ""
+    Itemstring = ""
+    AnnotString = ""
+    TimeStamp = ""
+    CommentNum = 0
+    UrlString = ""
+    Via = ""
+    Origin = ""
+    
+    TimeStamp = datetime.datetime.fromtimestamp(readerItem["updated"]).strftime('%Y-%m-%d %H:%M')
+    
+    if "via" in readerItem:
+        for v in readerItem["via"]:
+            Via = v["title"]
+            
+    
+    if "origin" in readerItem:
+        for o in readerItem["origin"]:
+            if "title" in o:
+                Origin = "<a href='" + readerItem["origin"]["htmlUrl"] + "'>" + readerItem["origin"]["title"] + "</a>"
+
+    if (ItemNumber % 2 ) == 0 :
+        ItemString = "\n<div class='item'>" + TimeStamp + " : " + str(ItemNumber) + " : " + Origin + " : " + Via
+    else :
+        ItemString = "\n<div class='item alternatelook'>" + TimeStamp + " : " + str(ItemNumber) + " : " + Origin + " : " + Via
+    if "canonical" in readerItem :
+        for cn in readerItem["canonical"]:
+            UrlString = "<a href = '" + cn["href"] + "'>"
+    elif "alternate" in readerItem :
+        for al in readerItem["alternate"]:
+            if "href" in al:
+                UrlString = "<a href = '" + al["href"] + "'>"
+    else:
+        UrlString = "<a name='unlinked'>"
+    
+    if "title" in readerItem :
+        ItemString += "<h3>" + UrlString + readerItem["title"] + "</a></h3>"
+    
+    if "content" in readerItem :
+        ItemString += readerItem["content"]["content"]
+    
+    if "content" not in readerItem :
+        if "summary" in readerItem:
+            ItemString += readerItem["summary"]["content"]
+        else:
+            ItemString += "\n<div class='item' style='empty'>Empty ItemString"
+    
+    ItemString += "</div>"
+    
+    if "comments" in readerItem:
+        for c in readerItem["comments"] :
+            CommentNum += 1
+            CommentString += "\n<div class='comment'> " + "<b> " + c["author"] + ":</b> " + c["htmlContent"] + "</div>"
+    
+    if "annotations" in readerItem :
+        for a in readerItem["annotations"] :
+            AnnotString = "\n<div class='annotation'>" + a["author"] + ": " + a["content"] + "</div>"
+    
+    ItemString = ItemString.encode('ascii', 'xmlcharrefreplace')
+    AnnotString = AnnotString.encode('ascii', 'xmlcharrefreplace')
+    CommentString = CommentString.encode('ascii', 'xmlcharrefreplace')
+    outputString = "<div class='row'>" + ItemString + AnnotString + CommentString + "</div>"
+    
+    return outputString
+
+def build_file_items(itemCol, outputfilename):
+    itemCount = 0
+    pageCount = 0
+    mostComments = 0
+    mostAnnots = 0
+    prevPageCount = 0
+    
+    Output = render_header()
+    # print str(len(itemCol["items"]))
+    
+    Pages = len(itemCol["items"]) / pageLength
+    randomPage = int(random.uniform(0, Pages))
+    
+    print str(randomPage) + " of " + str(Pages)
+    
+    for n in itemCol["items"]:
+        itemCount += 1
+        if ( itemCount % pageLength ) == 0 :
+            pageCount += 1
+        if prevPageCount != pageCount :
+            prevPageCount = pageCount
+        if pageCount == randomPage :
+            Output += render_item(n, itemCount)
+            
+    Output += render_footer()
+    completeOutput = Output.encode('utf-8')
+    
+    filename = outputfilename
+    f = codecs.open(filename, 'w' 'utf-8')
+    f.write(completeOutput)
+    f.close()
+    print 'wrote out file : ' + os.getcwd() + "/" + filename
+
+
+TotalSharedByComments = 0
+TotalSharedByAnnot = 0
+TotalSharedComments = 0
+TotalSharedAnnot = 0
+display=1
+itemContent = ""
+previousContent = ""
+itemDefs = []
+commentDefs = []
+annotationDefs = []
+sharedbyDefs = []
+
+itemCount = 0
+pageCount = 0
+mostComments = 0
+mostAnnots = 0
+prevPageCount = 0
+pageLength = 20
+
+pp = pprint.PrettyPrinter(indent=2)
+
+txt = open('/Users/doug.churchman/Documents/src/data/shared-by-followers.json')
+sharedby = json.loads(txt.read().decode("utf-8"))
+
+txt = open('/Users/doug.churchman/Documents/src/data/shared.json')
+shared = json.loads(txt.read().decode("utf-8"))
+
+build_file_items(shared,"DougShared.html")
+build_file_items(sharedby,"DougSharedBy.html")
+
+</pre></body></html>
+

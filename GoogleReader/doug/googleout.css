@@ -1,0 +1,59 @@
+body {
+    background-color: #ffffff;
+    color: #222222;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 2.0;
+    margin: 0;
+}
+    .container { margin-left: auto; margin-right: auto; width: 940px; }
+    .alternatelook { }
+    .item { padding: 10px; }
+    .row {
+        background-color: #eeeeee;
+        border-left: 1px solid black;
+        clear: both;
+        margin-top: 10px;
+    }
+    .comment {
+        background-color: #e0e0ff;
+        font-family: consolas, sans-serif;
+        font-size: 16px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .annotation {
+        background-color: #c0c0dd;
+        clear: both;
+        display: block;
+        font-family: proxima, sans-serif;
+        font-size: 16px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .selected { background-color: #f0a0f0; }
+    .PageTitle { float: left; margin-right: 200px; }
+    .PageNav { float: right; width: 200px; }
+    h2 { }
+    h3 { clear: all; line-height: 1.1; }
+    .itemorigin {
+        align: right;
+        float: right;
+        font-size: 12px;
+        line-height: 1.1;
+        width: 200px;
+    }
+
+    .itemtitle {
+        font: 175% bold;
+        font-family: proxima bold, sans-serif bold;
+        font-weight: bold;
+        margin-right: 240px;
+        line-height: 1.1;
+    }
+    .itemContent { background-color: #ffffff; clear: all; padding: 10px; }
+    .alternatelook .itemContent { background-color: #eeeeee; }
+    .parentNav a:visited { color: #eeeeee ; }
+    .parentNav a:link { color: #eeeeee ; }

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #222222;
+    background-color: #ffffff;}
+    .container { width: 940px; margin-left: auto; margin-right: auto;}
+    .alternatelook { background-color: #dddddd }
+    .item { padding: 10px; }
+    .row {
+    margin-top: 10px;
+    border-left: 1px solid black;
+    clear: both;
+    background-color: #eeeeee;
+    }
+    .comment {
+    font-family: consolas, sans-serif;
+    font-size: 16px;
+    background-color: #e0e0ff;
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+    .annotation {
+    font-family: proxima, sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+    background-color: #c0c0dd;
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 50px;
+    }
+    .selected {
+    background-color: #f0a0f0;
+    }
+    .PageTitle {
+    float: left;
+    margin-right: 200px;
+    }
+    .PageNav {
+    float: right;
+    width: 200px;
+    }
+    h2 {clear: all}
+    h3 {clear: all; line-height: 1.1;}
+    .itemorigin {
+    float: right;
+    width: 200px;
+    font-size: 12px;
+    line-height: 1.1;
+    align: right;
+    }
+
+    .itemtitle {
+    
+    margin-right: 240px
+    line-height: 1.1;
+    font: 175% bold;
+    font-family: proxima bold, sans-serif bold;
+    font-weight: bold;
+    }
+    .itemContent {
+    clear: all;
+    background-color: #ffffff;
+    padding: 10px;
+
+    }
+    .alternatelook .itemContent {
+    background-color: #eeeeee;
+    }
+    .parentNav a:visited { color: #eeeeee ; }
+    .parentNav a:link { color: #eeeeee ; }

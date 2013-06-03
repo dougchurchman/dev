@@ -1,0 +1,897 @@
+
+    <html><head><title>Google Reader Flatfile</title>
+    <!--link rel='stylesheet' type='text/css' href='bootstrap.css'-->
+    <link rel='stylesheet' type='text/css' href='googleout.css'>
+    </head><body>
+<div class = 'parentNav' style='align: center; font: 125%; color: #eeeeee; background-color: #006;' align='center'>
+<a href='DougStarred001.html'>Starred</a>
+ - <a href='DougShared001.html'>Shared</a>
+ - <a href='DougFollowers001.html'>FollowerShares</a>
+ - <a href='DougLiked001.html'>Liked</a>
+</div>
+    <div class='container'>
+    <h2><div align='left' class=PageTitle>Page 4 of 66</div><div align='right' class=PageNav><a href='DougStarred003.html'> <<3 </a> - <a href='DougStarred005.html'> 5>> </a></div></h2><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item80'><a href='http://www.kevintwodotoh.com'>kevintwodotoh.com</a> <br></br> 02/27/2006 07:00 PM</span><span class='itemtitle em'><a href = 'http://kevintwodotoh.com/2006/02/27/software/onenote-and-ir-are-a-deadly-tabletpc-combo.html'>OneNote and IR are a deadly TabletPC combo</a></span>
+<div class='itemcontent clearfix span5'>	<p><img src="http://www.kevintwodotoh.com/wp-content/images/onenote.jpg" align="right" hspace="16" alt="OneNote 2003">Had to share a work experience today that confirmed two things that every TabletPC should have: an IR port (pretty standard) and <a href="http://kevintwodotoh.com/index.php?s=onenote">OneNote</a>. On just a few minutes notice, I had to attend an all day training class for some software administration I&#8217;ll be doing. I walked into class with my work laptop and my M205 TabletPC. I started scribbling notes in OneNote until 30 minutes into the class when I received the actual Power Point presentation we were covering. Since our work laptops are relatively locked-down, I figured there was no way to leverage just the Tablet, but luckily I was wrong.</p>
+	<p><a></a></p>
+	<p>I immediately beamed the presentation from the work laptop to the Tablet via the IR port, opened the doc in PowerPoint, clicked File, Print and chose &#8220;Send to OneNote&#8221; as my &#8220;printer&#8221;. Ka-BOOM! The whole presentation was imported into OneNote and the rest of my notes and highlights  magically appeared in the presentation as I inked them throughout the day. This tip is old-hat to seasoned Tablet and OneNote users, but I thought it worth a mention, figuring a Tablet n00b or two could use the knowledge. Enjoy!
+</p>
+</div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item81'><a href='http://codebetter.com/blogs/scott.bellware/default.aspx'>Scott Bellware [MVP]</a> <br></br> 02/28/2006 07:23 AM</span><span class='itemtitle em'><a href = 'http://codebetter.com/blogs/scott.bellware/archive/2006/02/28/139446.aspx'>NUnit Code Snippets for Visual Studio 2005</a></span>
+<div class='itemcontent clearfix span5'><p>For NUnit users who have switched to Visual Studio 2005 and would like a reasonably decent set of keyboard shortcuts for some of the most common uses of the NUnit framework, you might find these code snippets to be of use.</p>
+<p>You can get the snippet installer from my site:<br><a href="http://www.bellware.net/downloads/BellwareNUnitSnippets.vsi">http://www.bellware.net/downloads/BellwareNUnitSnippets.vsi</a></p>
+<p>The installer is not Authenticode signed.&#160; You will be prompted with a warning and request for confirmation to proceed.</p>
+<p>The installer was creating using the <a href="http://www.gotdotnet.com/workspaces/workspace.aspx?id=6b1aceda-e613-4dac-beeb-0cd8ad8f2d41">Visual Studio Content Installer Power Toys</a></p>
+<p>The following documentation describes the snippets, keyboard shortcuts, and templates.</p>
+<p>Text highlighted in <span style="background-color:rgb(255,255,153)">yellow</span> in the example code indicates the a snippet&#39;s keyboard shortcut and the cursor position where the shortcut is entered.&#160; Press the TAB key to expand a shortcut.</p>
+<p>Text highlighted in <span style="background-color:rgb(204,255,153)">green</span> in the example code indicates a snippet&#39;s template literals.&#160; Cycle through template literals using the TAB key.&#160; Press ENTER to accept the template literal values.</p>
+<p>The <span style="background-color:rgb(255,153,153)">^</span> character indicates the cursor position after completing a snippet's template.</p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>Title &amp; Description</td>
+<td>Shortcut</td>
+<td>Example</td></tr>
+<tr align="left">
+<td><b>Import NUnit.Framework namespace</b> 
+<ul>
+<li>Inserts the NUnit.Framework import statement</li></ul></td>
+<td><b>unuf</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><span style="color:blue">using</span><span style="color:black"> System;<br><span style="background-color:rgb(255,255,153)"><b>unuf</b></span><br><br></span><span style="color:blue">namespace</span><span style="color:black"> NUnitSnippets<br>{<br>&#160;&#160;&#160;&#160;</span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetExampleFixture<br></span><span style="color:black">&#160;&#160;&#160;&#160;{<br>&#160;&#160;&#160;&#160;}<br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><span style="color:blue">using</span><span style="color:black"> System;<br></span><b><span style="color:blue">using </span></b><span style="color:black"><b>NUnit.Framework;</b><br><br></span><span style="color:blue">namespace</span><span style="color:black"> NUnitSnippets<br>{<br>&#160;&#160;&#160;&#160;</span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetExampleFixture<br></span><span style="color:black">&#160;&#160;&#160;&#160;{<br>&#160;&#160;&#160;&#160;}<br>}</span> </div> </td></tr>
+<tr align="left">
+<td><b>TestFixture Attribute and Public Class Visibility</b> 
+<ul>
+<li>Inserts the [TestFixture] attribute 
+</li><li>Inserts a carriage return after the [TestFixture] attribute 
+</li><li>Inserts "public" followed by a space</li></ul>
+<p>Insert the TestFixture attribute while compensating for the new default C# class visibility in Visual Studio 2005.</p></td>
+<td><b>tfp</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">tfp</span></b><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetExampleFixture<br></span><span style="color:black">{<br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">TestFixture</span></b><span style="color:black"><b>]</b><br></span><b><span style="color:blue">public</span><span style="color:black"> </span></b><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>}</span> </div> </td></tr>
+<tr align="left">
+<td><b>TestFixture Attribute</b> 
+<ul>
+<li>Inserts the [TestFixture] attribute 
+</li><li>Inserts a carriage return after the [TestFixture] attribute</li></ul>
+<p>Insert the TestFixture attribute for a class without modifying the fixture class visibility.</p></td>
+<td><b>tfa</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">tfa</span></b>public <span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>}</span> </div> 
+<p>After: </p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">TestFixture</span></b><span style="color:black"><b>]</b><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>}</span> </div></td></tr>
+<tr align="left">
+<td><b>SetUp Method</b> 
+<ul>
+<li>Inserts a setup method template, including the [SetUp] attribute 
+</li><li>Enter the setup method name and press ENTER</li></ul>
+<p>&#160;</p></td>
+<td><b>su</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>su</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br><b>&#160;&#160;&#160;&#160;[</b></span><b><span style="color:teal">SetUp</span><span style="color:black">]<br>&#160;&#160;&#160;&#160;</span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span></b><span style="color:black"><b> <span style="background-color:rgb(204,255,153)">SetUp</span>()<br>&#160;&#160;&#160;&#160;{</b><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span style="background-color:rgb(255,153,153)">^</span><br>&#160;&#160;&#160;&#160;<b>}</b><br>}</span> </div> </td></tr>
+<tr align="left">
+<td><b>Test Case</b> 
+<ul>
+<li>Inserts test case method template, including the [Test] attribute 
+</li><li>Enter the test case method name and press ENTER</li></ul></td>
+<td><b>tc</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>tc</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160;&#160;<b>[</b></span><b><span style="color:teal">Test</span><span style="color:black">]<br>&#160;&#160;&#160;&#160;</span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span></b><span style="color:black"><b> <span style="background-color:rgb(204,255,153)">TestCase</span>()<br>&#160;&#160;&#160;&#160;{</b><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,153,153)">^</span><br>&#160;&#160;&#160;&#160;<b>}</b><br>}</span> </div> </td></tr>
+<tr align="left">
+<td><b>TearDown Method</b> 
+<ul>
+<li>Inserts a teardown method template, including the [TearDown] attribute 
+</li><li>Enter the teardown method name and press ENTER</li></ul></td>
+<td><b>td</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>td</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160; <b>[</b></span><b><span style="color:teal">TearDown</span><span style="color:black">]<br>&#160;&#160;&#160; </span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span></b><span style="color:black"><b> <span style="background-color:rgb(204,255,153)">TearDown</span>()<br>&#160;&#160;&#160; {</b><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span style="background-color:rgb(255,153,153)">^</span><br>&#160;&#160;&#160;&#160;<b>}</b><br>}</span> </div> </td></tr>
+<tr align="left">
+<td><b>Assert.AreEqual</b> 
+<ul>
+<li>Inserts an Assert.AreEqual template 
+</li><li>Enter the expected and actual and press ENTER 
+</li><li>Cycle between template literals using the TAB key</li></ul>
+<p>&#160;</p></td>
+<td><b>ae</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>ae</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span></b><span style="color:black"><b>.AreEqual(<span style="background-color:rgb(204,255,153)">expected</span>, <span style="background-color:rgb(204,255,153)">actual</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Assert.AreSame</b> 
+<ul>
+<li>Inserts an Assert.AreSame template 
+</li><li>Enter the expected and actual and press ENTER 
+</li><li>Cycle between template literals using the TAB key</li></ul></td>
+<td><b>as</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><span style="color:black"><b><span style="background-color:rgb(255,255,153)">as</span></b><br></span><span style="color:black">}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span></b><span style="color:black"><b>.AreSame(<span style="background-color:rgb(204,255,153)">expected</span>, <span style="background-color:rgb(204,255,153)">actual</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Assert.IsTrue</b> 
+<ul>
+<li>Inserts an Assert.IsTrue template 
+</li><li>Enter the condition and press ENTER</li></ul></td>
+<td><b>at</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>at</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span></b><span style="color:black"><b>.IsTrue(<span style="background-color:rgb(204,255,153)">condition</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Assert.IsFalse</b> 
+<ul>
+<li>Inserts an Assert.IsTrue template 
+</li><li>Enter the condition and press ENTER</li></ul></td>
+<td><b>af</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>af</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span></b><span style="color:black"><b>.IsFalse(<span style="background-color:rgb(204,255,153)">condition</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Assert.IsNull</b> 
+<ul>
+<li>Inserts an Assert.IsNull template 
+</li><li>Enter the object and press ENTER</li></ul></td>
+<td><b>an</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>an</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span></b><span style="color:black"><b>.IsNull(<span style="background-color:rgb(204,255,153)">object</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Assert.IsNotNull</b> 
+<ul>
+<li>Inserts an Assert.IsNotNull template 
+</li><li>Enter the object and press ENTER</li></ul></td>
+<td><b>ann</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>ann</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span></b><span style="color:black"><b>.IsNotNull(<span style="background-color:rgb(204,255,153)">object</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Assert.IsInstanceOfType</b> 
+<ul>
+<li>Inserts an Assert.IsInstanceOfType template 
+</li><li>Enter the expected type name, and the actual instance and press ENTER 
+</li><li>Cycle between template literals using the TAB key</li></ul></td>
+<td><b>ai</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>ai</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">Assert</span><span style="color:black">.IsInstanceOfType(</span><span style="color:blue">typeof</span></b><span style="color:black"><b>(<span style="background-color:rgb(204,255,153)">expected</span>), <span style="background-color:rgb(204,255,153)">actual</span>);</b><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>StringAssert.Contains</b> 
+<ul>
+<li>Inserts a StringAssert.Contains template 
+</li><li>Enter the expected type name, and the actual instance and press ENTER 
+</li><li>Cycle between template literals using the TAB key</li></ul>
+<p>&#160;</p>
+<p>&#160;</p></td>
+<td><b>sac</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>sac</b></span><br>}</span> </div> 
+<p>After:</p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><b><span style="color:teal">StringAssert</span></b><span style="color:black"><b>.Contains(<span style="background-color:rgb(204,255,153)">expected</span>, <span style="background-color:rgb(204,255,153)">actual</span>)</b>;<span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><strong>Assert</strong> 
+<ul>
+<li>Inserts an Assert. template 
+</li><li>Enter the assert method name and press ENTER</li></ul></td>
+<td><b>a</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>a</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;</span><span style="color:teal">Assert</span><span style="color:black">.<span style="background-color:rgb(204,255,153)">assertion</span><span style="background-color:rgb(255,153,153)">^</span><br>}</span> </div></td>
+</tr><tr align="left">
+<td><b>ExpectedException Attribute</b> 
+<ul>
+<li>Inserts a template for an [ExpectedException] attribute 
+</li><li>Enter the type of the expected exception and press ENTER</li></ul>
+<p>&#160;</p></td>
+<td><b>eea</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br><span style="background-color:rgb(255,255,153)"><b>eea</b></span><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br><b>[</b></span><b><span style="color:teal">ExpectedException</span><span style="color:black">(</span><span style="color:blue">typeof</span></b><span style="color:black"><b>(<span style="background-color:rgb(204,255,153)">exceptionType</span>))]</b><span style="background-color:rgb(255,153,153)">^</span><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br><br>}</span> </div> </td></tr>
+<tr align="left">
+<td><b>Ignore Attribute</b> 
+<ul>
+<li>Inserts a template for an [Ignore] attribute 
+</li><li>Enter the reason and press ENTER</li></ul>
+<p>&#160;</p></td>
+<td><b>ia</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br><span style="background-color:rgb(255,255,153)"><b>ia</b></span><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br><br>}</span> </div> 
+<p>After:</p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">Test</span><span style="color:black">]<br><b>[</b></span><b><span style="color:teal">Ignore</span><span style="color:black">(</span><span style="color:maroon">"<span style="background-color:rgb(204,255,153)">reason</span>"</span></b><span style="color:black"><b>)]</b></span><span style="color:black;background-color:rgb(255,153,153)">^</span><span style="color:black"><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>TestFixtureSetUp Method</b> 
+<ul>
+<li>Inserts a test fixture setup method template, including the [TestFixtureSetUp] attribute 
+</li><li>Enter the method name and press ENTER</li></ul>
+<p>&#160;</p>
+<p>&#160;</p></td>
+<td><b>tfsu</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>tfsu</b></span><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br><b>&#160;&#160;&#160; [</b></span><b><span style="color:teal">TestFixtureSetUp</span><span style="color:black">]<br>&#160;&#160;&#160;&#160;</span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span></b><span style="color:black"><b> <span style="background-color:rgb(204,255,153)">TestFixtureSetUp</span>()<br>&#160;&#160;&#160;&#160;{</b><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="color:black;background-color:rgb(255,153,153)">^</span><span style="color:black"><br>&#160;&#160;&#160;&#160;<b>}</b><br>}</span> </div></td>
+</tr><tr align="left">
+<td><b>TestFixtureTearDown Method</b> 
+<ul>
+<li>Inserts a test fixture teardown method template, including the [TestFixtureTearDown] attribute 
+</li><li>Enter the method name and press ENTER</li></ul></td>
+<td><b>tftd</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br>&#160;&#160;&#160;&#160;<span style="background-color:rgb(255,255,153)"><b>tftd</b></span><br>}</span> </div> 
+<p>After:</p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white">[<span style="color:teal">TestFixture</span><span style="color:black">]<br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">class</span><span style="color:black"> </span><span style="color:teal">NUnitSnippetFixture<br></span><span style="color:black">{<br><b>&#160;&#160;&#160;&#160;[</b></span><b><span style="color:teal">TestFixtureTearDown</span><span style="color:black">]<br>&#160;&#160;&#160;&#160;</span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span></b><span style="color:black"><b> <span style="background-color:rgb(204,255,153)">TestFixtureTearDown</span>()<br>&#160;&#160;&#160;&#160;{</b><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="color:black;background-color:rgb(255,153,153)">^</span><span style="color:black"><br>&#160;&#160;&#160;&#160;<b>}</b><br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>Test Attribute</b> 
+<ul>
+<li>Inserts a [Test] attribute 
+</li><li>Inserts a carriage return after the [Test] attribute</li></ul></td>
+<td><b>ta</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">ta</span></b>public <span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">Test</span></b><span style="color:black"><b>]</b><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestCase()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span></div></td></tr>
+<tr align="left">
+<td><b>SetUp Attribute</b> 
+<ul>
+<li>Inserts a [SetUp] attribute 
+</li><li>Inserts a carriage return after the [SetUp] attribute</li></ul>
+<p>&#160;</p>
+<p>&#160;</p></td>
+<td><b>sua</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">sua</span></b>public <span style="color:blue">void</span><span style="color:black"> SetUp()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">SetUp</span></b><span style="color:black"><b>]</b><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> SetUp()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>TearDown Attribute</b> 
+<ul>
+<li>Inserts a [TearDown] attribute 
+</li><li>Inserts a carriage return after the [TearDown] attribute</li></ul></td>
+<td><b>tda</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">tda</span></b>public <span style="color:blue">void</span><span style="color:black"> TearDown()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> 
+<p>After:</p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">TearDown</span></b><span style="color:black"><b>]</b><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TearDown()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>TestFixtureSetUp Attribute</b> 
+<ul>
+<li>Inserts a [TestFixtureSetUp] attribute 
+</li><li>Inserts a carriage return after the [TestFixtureSetUp] attribute</li></ul>
+<p>&#160;</p></td>
+<td><b>tfsua</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">tfsua</span></b>public <span style="color:blue">void</span><span style="color:black"> TestFixtureSetUp()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> 
+<p>After:</p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">TestFixtureSetUp</span></b><span style="color:black"><b>]</b><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestFixtureSetUp()<br>{<br>&#160;&#160;&#160;&#160;<br>}</span> </div> </td>
+</tr><tr align="left">
+<td><b>TestFixtureTearDown Attribute</b> 
+<ul>
+<li>Inserts a [TestFixtureTearDown] attribute 
+</li><li>Inserts a carriage return after the [TestFixtureTearDown] attribute</li></ul></td>
+<td><b>tftda</b></td>
+<td>Before:<br>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b><span style="background-color:rgb(255,255,153)">tftda</span></b>public <span style="color:blue">void</span><span style="color:black"> TestFixtureTearDown()<br>{<br><br>}</span> </div> 
+<p>After:<br></p>
+
+<div style="font-size:9pt;font-family:monospace;background-color:white"><b>[<span style="color:teal">TestFixtureTearDown</span></b><span style="color:black"><b>]</b><br></span><span style="color:blue">public</span><span style="color:black"> </span><span style="color:blue">void</span><span style="color:black"> TestFixtureTearDown()<br>{<br><br>}</span> </div> </td></tr></tbody></table>
+<div><strong>Share this post:</strong> <a title="Email NUnit Code Snippets for Visual Studio 2005" href="mailto:?body=Thought+you+might+like+this:+http://codebetter.com/blogs/scott.bellware/archive/2006/02/28/139446.aspx&amp;subject=NUnit+Code+Snippets+for+Visual+Studio+2005">Email it!</a> | <a href="http://del.icio.us/post?url=http://codebetter.com/blogs/scott.bellware/archive/2006/02/28/139446.aspx&amp;title=NUnit+Code+Snippets+for+Visual+Studio+2005" title="Submit NUnit Code Snippets for Visual Studio 2005 to del.icio.us">bookmark it!</a> | <a href="http://www.digg.com/submit?url=http://codebetter.com/blogs/scott.bellware/archive/2006/02/28/139446.aspx&amp;phase=2" title="Submit NUnit Code Snippets for Visual Studio 2005 to digg.com">digg it!</a> | <a href="http://reddit.com/submit?url=http://codebetter.com/blogs/scott.bellware/archive/2006/02/28/139446.aspx&amp;title=NUnit+Code+Snippets+for+Visual+Studio+2005" title="Submit NUnit Code Snippets for Visual Studio 2005 to reddit.com">reddit!</a>| <a href="http://www.dotnetkicks.com/kick/?url=http://codebetter.com/blogs/scott.bellware/archive/2006/02/28/139446.aspx" title="Submit NUnit Code Snippets for Visual Studio 2005 to DotNetKicks.Com">kick it!</a></div><img src="http://codebetter.com/aggbug.aspx?PostID=139446" width="1" height="1"></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item82'><a href='http://37signals.com/svn/posts'>Signal vs. Noise</a> <br></br> 02/28/2006 07:40 PM</span><span class='itemtitle em'><a href = 'http://37signals.com/svn/archives2/original_ipod_announcement_thread_at_macrumors.php'>Original iPod announcement thread at MacRumors</a></span>
+<div class='itemcontent clearfix'><p><a href="http://forums.macrumors.com/showthread.php?s=&amp;threadid=500">I love this</a>:</p>
+
+<blockquote>
+I still can&#8217;t believe this! All this hype for something so ridiculous! Who cares about an MP3 player? I want something new! I want them to think differently! Why oh why would they do this?! It&#8217;s so wrong! It&#8217;s so stupid!
+</blockquote>
+
+<blockquote>
+gee! an mp3 player with a HD! how original! kinda reminds me of a JUKEBOX i once knew.
+</blockquote>
+
+<blockquote>
+I&#8217;d call it the Cube 2.0 as it wont sell, and be killed off in a short time&#8230;and it&#8217;s not really functional.
+</blockquote>
+
+<blockquote>
+All that hype for an MP3 player? Break-thru digital device? The Reality Distiortion Field is starting to warp Steve&#8217;s mind if he thinks for one second that this thing is gonna take off.
+</blockquote>
+
+<blockquote>
+There are already two products similar to this on the market. The Nomad Jukebox and the Archos Jukebox which can come with a 20 gig HD. The iPod is obviously alot cooler and has firewire, but it is far from revolutionary. I for one am disappointed and think that apple is making a mistake by trying to get into this market.
+</blockquote>
+
+<p>Apple should have just listened to their customers and never released the iPod.</p>
+<p><map name="google_ad_map_1UdRvHWp5fBf7WKmgulPxqr6ttc_"><area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/1UdRvHWp5fBf7WKmgulPxqr6ttc_?pos=0" coords="1,2,367,28"><area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"></map><img usemap="http://37signals.com/svn/posts#google_ad_map_1UdRvHWp5fBf7WKmgulPxqr6ttc_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5352009007442360&amp;output=png&amp;cuid=1UdRvHWp5fBf7WKmgulPxqr6ttc_&amp;url=http%3A%2F%2F37signals.com%2Fsvn%2Farchives2%2Foriginal_ipod_announcement_thread_at_macrumors.php"></p>
+<div><a href="http://feeds.feedburner.com/~f/37signals/beMH?a=qt7IqsvA"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=qt7IqsvA" border="0"></a> <a href="http://feeds.feedburner.com/~f/37signals/beMH?a=jdEWrDQJ"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=jdEWrDQJ" border="0"></a></div></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item83'><a href='http://snowdeal.org/section/ex_machina/'>snowdeal.org &gt; ex machina</a> <br></br> 03/01/2006 09:45 PM</span><span class='itemtitle em'><a href = 'http://snowdeal.org/section/ex_machina/2006/03/eric-update-day-605-odin-coming-to.html'>the eric update - day 605: odin coming to a magazine stand near you! ( again )</a></span>
+<div class='itemcontent clearfix span5'><div>
+<p>
+
+<a href="http://www.flickr.com/photos/snowdeal/106448699/" shape="rect">
+  <img align="right" border="0" hspace="10" src="http://static.flickr.com/54/106448699_42f102f5b4_m.jpg" title="day 605: odin coming to a magazine stand near you! ( again )">
+</a>
+
+
+well, i guess it&#39;s time to let the cat out of the bag on this one.  
+
+the march/april issue of <a href="http://www.mothering.com/">mothering magazine</a> is running an article on <a href="http://en.wikipedia.org/wiki/Kangaroo_care">kangaroo care</a> and they&#39;ve chosen to include 8 (9?) photos of <a href="http://snowdeal.org/section/ex_machina/2004/07/eric-update-day-21-otherwise-known-as.html">odin</a> <a href="http://snowdeal.org/section/ex_machina/2004/07/eric-update-day-16-doing-roo-with-pops.html">doing the &#39;roo</a>. <br>
+<br>
+
+and while most of the pictures are of kris and odin, i&#39;m honored that my <a href="http://www.flickr.com/photos/snowdeal/97240/">ugly, hairy chest</a>  will be featured as well which is, i think, a milestone for parenting magazines who generally seem to believe <a href="http://daddytypes.com/archive/2006/01/23/disney_from_now_on_only_fatherless_characters.php">dad&#39;s don&#39;t exist</a> :-) <br>
+<br>
+
+first <a href="http://snowdeal.org/section/ex_machina/2005/10/day-460-odin-coming-to-magazine-stand.html">parents magazine</a> and now <a href="http://www.mothering.com/">mothering magazine</a> - i think someone from <a href="http://www.parenting.com/parenting/">parenting magazine</a> needs to call.  or maybe <a href="http://wired.com/">wired</a> which he&#39;s been reading for <a href="http://snowdeal.org/section/ex_machina/2004/09/eric-update-day-59-even-more-weight.html">for awhile</a> ( and did <a href="http://en.wikipedia.org/wiki/Craig_Newmark">craig newmark</a> really <a href="http://snowdeal.org/section/ex_machina/2004/09/eric-update-day-59-even-more-weight.html#109414512325297810">comment on that post</a>? geeky inquiring minds want to know. <i>
+<b>update:</b> i <a href="http://snowdeal.org/section/ex_machina/2004/09/eric-update-day-59-even-more-weight.html#114124441715180824">can confirm</a> that it really is <a href="http://www.cnewmark.com/">craig</a>, who i might add is something of a hero of mine.  i can only hope that odin will grow up with his brand of <a href="http://snowdeal.org/section/ex_machina/2004/09/eric-update-day-59-even-more-weight.html#109414668532408513">nerd values</a>.</i> ). <br>
+<br>
+
+in any case, it looks like the magazine <a href="http://en.wikipedia.org/wiki/Trifecta">trifecta</a> is now in play. <br>
+<br>
+
+<i>we don&#39;t have a copy of the magazine yet and we&#39;re leaving for <a href="http://en.wikipedia.org/wiki/Upper_Peninsula_of_Michigan">da u.p.</a> for awhile tommorrow which is the real reason why i had to go with any ol&#39; magazine for this post.  you can blame fellow <a href="http://flickr.com/">flickrite</a> <a href="http://flickr.com/photos/norby/">peter norby</a> for doing the networking that made this happen :-)</i>
+
+</p>
+</div></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item84'><a href='http://secretGeek.net/index.asp'>secretGeek</a> <br></br> 03/02/2006 03:39 PM</span><span class='itemtitle em'><a href = 'http://www.secretGeek.net/jloo.asp'>A moment to reflect</a></span>
+<div class='itemcontent clearfix'>
+      <p><a href="http://www.thelooneys.com/blogs/jason/default.aspx">Jason Looney</a>, or <em>J-Loo</em> as he is known to his inner circle, is one of the funniest bloggers alive today.</p><p>His work is reminiscent of some of the great comedy bloggers of yesteryear.</p><p>He also writes part-time for Futurama and used to help David Letterman with his "Top Ten" countdowns. Jason's specialties were numbers three and six. No one can do numbers three and six like J-Loo.</p><p>His first job as a comedy writer was on The Simpsons. Every week when Bart had to write something different on the blackboard, it was Jason's job to check the punctuation.</p><p>I introduced Jason to his lovely wife, and not six weeks later they celebrated their tenth wedding anniversary.</p><p>I first met J-Loo when we were both working as head chef's at Maxim's. Neither us knew how to fry an egg but we covered for each other: one of us would make a lot of bork-bork noises in the kitchen while the other ran next door and bought the meals. Just before the meal left the kitchen, J-Loo would always throw on a sprig of italian parsley, smack his lips and exclaim "Bon-Appetit!" It became his trademark and he has sued for it many times. He is now so rich that he only blogs for fun, not money. Imagine that.</p><p>I could write a million stories about Jason, like the time we were reincarnated as a coyote and a roadrunner and i was fired out of a sling shot, trying to catch him and eat him; all good times.</p><p>Also of note is his friend, and former siamese-twin-sister, <a href="http://www.thelooneys.com/blogs/alan/archive/2006/02/10/banned_in_mesopotamia.aspx">Alan Dotson</a>, a gifted word-smith who can evoke the full spectrum of emotions from chuckles to giggles.</p><p>But for now, just <a href="http://www.thelooneys.com/blogs/jason/default.aspx">read J-Loo's blog</a>, be good to each other, and give one to your wife from me. ;-)</p>
+    </div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item85'><a href='http://blog.flickr.com/flickrblog/'>FlickrBlog</a> <br></br> 03/02/2006 07:17 PM</span><span class='itemtitle em'><a href = 'http://blog.flickr.com/flickrblog/2006/03/forgotten_city.html'>Forgotten City</a></span>
+<div class='itemcontent clearfix span5'><div><p><a title="Photo Sharing" href="http://www.flickr.com/photos/jestre_aka_zann/104620791/"><img width="500" height="375" border="0" alt="ForgottenCity250206073" src="http://static.flickr.com/38/104620791_749ff722fd.jpg"></a></p>
+
+<p>See more of <a href="http://www.flickr.com/photos/jestre_aka_zann/">jestre aka zann</a>&#39;s <a href="http://www.flickr.com/photos/jestre_aka_zann/sets/72057594070588837/">Forgotten City set</a>.</p>
+
+<p>More beautiful infrared photos are available in <a href="http://www.flickr.com/photos/tags/ir/clusters/infrared-bw-trees/">this IR cluster</a>.</p></div></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item86'><a href='http://37signals.com/svn/posts'>Signal vs. Noise</a> <br></br> 03/03/2006 03:39 PM</span><span class='itemtitle em'><a href = 'http://37signals.com/svn/archives2/fly_on_the_wall_week_of_march_4.php'>Fly on the wall (week of March 4)</a></span>
+<div class='itemcontent clearfix'><p>Our internal 37signals <a href="http://www.campfirenow.com">Campfire</a> chat room is constantly buzzing with activity. Current projects are discussed, code is swapped, suggestions are made, etc. There&#8217;s also lots of miscellaneous chatter that goes down. I went flipping through the transcripts and here&#8217;s a look at some of what we discussed this week:</p>
+
+<ul>
+<li>Ryan said that one thing people missed about <a href="http://37signals.com/svn/archives2/a_sketch_to_screen_case_study.php">his sketch post</a> &#8220;is that the hard work is deciding what&#8217;s important&#8230;and that process isn&#8217;t included in the sketch to screen post&#8230;when you&#8217;ve figured out what&#8217;s important and what doesn&#8217;t matter, it makes the rest a lot easier.&#8221;</li>
+
+<li>Ryan thinks <a href="http://www.gladwell.com/media/index.html">Malcolm Gladwell</a> looks like <a href="http://shopping.animazing.com/gallery/simpsons/images/sideshow_bob_roberts_410_jpg.jpg">Sideshow Bob</a>. I&#8217;ll throw <a href="http://blog.biggeststars.com/archives/phil1.jpg">Phil Spector</a> into the mix too.
+
+<img src="http://37signals.com/svn/images/sideshow.jpg" width="420" height="139">
+
+They really do all have the same&#8230;eyes.</li>
+
+<li>Unsurprisingly, we read this article and liked the cut of its jib: <a href="http://www.acm.org/ubiquity/views/v7i07_pfeiffer.html">Why Features Don&#8217;t Matter Anymore: The New Laws of Digital Technology</a>.</li>
+
+<li>Jason spent a long time kerning all the headlines in the book and says kerning is &#8220;addictive once you get going.&#8221;</li>
+
+<li>We were all choked up by <a href="http://www.collegehumor.com/movies/1667265/">the amazing video</a> of the autistic kid who went all Jordan-on-the-Blazers at the end of a high school basketball game.</li>
+</ul>
+
+<p>More after the jump.</p>
+<ul>
+<li>Sam did this: <a href="http://37signals.com/svn/archives2/productivity_tip_throw_everything_on_your_desk_in_a_box.php">Productivity Tip: Throw everything on your desk in a box</a> and said it &#8220;feels great.&#8221;</li>
+
+<li>Jason got a kick out of <a href="http://practicalmadness.com/2006/02/getting_real_dangerous_like_a">Getting Real: Dangerous Like A Ninja Polar Bear?</a></li>
+
+<li><a href="http://www.chicagoist.com/archives/2006/02/28/interview_jason_fried_david_heinemeier_hansson_of_37signals.php">Jason and David were interviewed by Chicagoist</a>. (JF&#8217;s verdict: &#8220;rambled in some spots, but overall it&#8217;s good.&#8221;)</li>
+
+<li>General reaction to <a href="http://www.techcrunch.com/2006/02/28/killer-new-livecom-service-street-side/">New Live.com Service: Street-Side</a>: Cool but &#8220;so tacky to throw in a totally unnecessary and shitty looking race car.&#8221;</li>
+
+<li>Marcel ate lunch at Panera using <a href="http://www.campfirenow.com">Campfire</a> while also working on a blog post with <a href="http://www.backpackit.com">Backpack</a> and wrote, &#8220;I feel like a 37signals commercial.&#8221;</li>
+
+<li>Sam is usually the strong/silent type but occasionally chimes in with pithy comments like this:<br><br>
+
+<blockquote>the input onclick should be &#8220;$(&#8216;comment_form&#8217;).action = &#8216;preview_comment#preview_comment_form&#8217;; $(&#8216;comment_form&#8217;).submit()&#8221;</blockquote></li>
+
+<li>Despite claims to the contrary, Ryan does not chill out during design binges by twisting himself into yoga positions. In fact, he has never done yoga.</li>
+
+<li>Jamis is quotable: &#8220;People typically sound most authoritative when they have no idea what they&#8217;re talking about.&#8221; Someone call Bartlett&#8217;s.</li>
+
+<li>Jason likes the hover on <a href="http://www.secondsite.biz/deck/signup.php">this chart</a> but thinks they&#8217;re getting &#8220;a little too clever on the pricing level.&#8221;</li>
+
+<li>Nominee for best supporting HTML character: The arrow
+&#8592;
+&#8594;
+&#8593;
+&#8595;</li>
+
+<li>Jamis  has been getting <a href="http://www.utahbirds.org/birdsofutah/BirdsD-K/DarkEyedJunco.htm">Dark-eyed Juncos</a> at his bird feeder. Ryan thinks that sounds like an insult: &#8220;You dark-eyed junco!&#8221; Also, Jamis&#8217; two-year-old daughter looked out the window the other day and said, &#8220;Mommy! House finch!&#8221; That&#8217;s pretty cute.</li>
+
+<li>Jamis discovered <a href="http://en.wikipedia.org/wiki/The_37s_%28Voyager_episode%29">a Wikipedia entry on The &#8217;37s</a>: &#8220;The &#8217;37s was the first episode broadcast of the second season of the TV series Star Trek: Voyager&#8230;When Voyager&#8217;s crew comes upon the planet in the 24th Century, the 37s have been left in stasis for centuries and the descendants of the original Terran abductees have developed several cities on the planet&#8217;s surface using fusion-based technology left by their captors.&#8221;</li>
+
+<li>Jamis is working on a book of his own and &#8220;learning the hard way how prehistoric the practices of the publishing industry are&#8230;I have to format each book in Word, using a template they give me&#8230;then email it to the editor&#8230;who adds her edits in red&#8230;and sends me the file back, renamed.&#8221;</li>
+
+<li>Marcel thinks <a href="http://project.ioni.st/post/663#post-663">his new business card</a> is sexy. He also notes <a href="http://lord-whimsy.livejournal.com/78369.html#cutid1">Lord Whimsy approves</a> of the unangle business cards.</li>
+
+<li>I&#8217;m particularly fond of what I call <a href="http://37signals.com/svn/archives2/getting_real_the_book.php#c24331">the Seacrest Principle</a>. May include this concept to Intro to Life 101: If you don&#8217;t like someone, don&#8217;t seek out unnecessary contact with them. Jamis relates it to the old exchange: &#8220;It hurts when I do this, Doctor.&#8221;&#8230;&#8221;Then don&#8217;t do that.&#8221;</li>
+
+<li>I told Ryan the ping noise he made for campfire is lovely and very zen.</li>
+
+<li>Ryan bought all four first editions of <a href="http://www.natureoforder.com/">Christopher Alexander&#8217;s Nature of Order</a> series. He notes that they are full of typos yet he still finds them quite valuable. Crazy that.</li>
+
+<li>Jason noticed others are jumping on the betas are bullshit bandwagon: <a href="http://joyeur.com/2006/03/03/public-betas-are-a-sham">Public Betas Are a Sham</a>.</li>
+
+<li>David was busy doing real work, like building <a href="https://gettingreal.37signals.com/">the book&#8217;s checkout/payment system</a>. Nifty how it&#8217;s all on one page, innit?</li>
+
+</ul>
+
+<p>There were also a few pictures of cute animals and a bit of poking fun at the endless complaining that goes on here at SvN and our other forums. Be warned, make a stupid comment and we may make fun of you behind your back. Ya know, because we&#8217;re arrogant meanies. Have a great weekend everyone.</p>
+<div><a href="http://feeds.feedburner.com/~f/37signals/beMH?a=zB2gVJyl"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=zB2gVJyl" border="0"></a> <a href="http://feeds.feedburner.com/~f/37signals/beMH?a=yQ3RbZeB"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=yQ3RbZeB" border="0"></a></div></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item87'><a href='http://37signals.com/svn/posts'>Signal vs. Noise</a> <br></br> 03/06/2006 11:53 AM</span><span class='itemtitle em'><a href = 'http://37signals.com/svn/archives2/the_cost_of_bootstrapping_your_app_the_figures_behind_dropsend_part_one_.php'>The Cost of Bootstrapping Your App: The Figures Behind DropSend (part one) </a></span>
+<div class='itemcontent clearfix'><p>I bet a lot of your are thinking about building your own web app. But how do you get started if you have no idea what it&#8217;s going to cost you? How can you budget for the unknown?</p>
+
+<p>I recently did a talk at <a href="http://www.carsonworkshops.com/summit">The Future of Web Apps</a> in London (one of our <a href="http://www.carsonworkshops.com/">Carson Workshops</a> events), focusing specifically on this issue. The feedback I received was very positive, so I&#8217;ve decided to share it with you all.</p>
+
+<p>You can also <a href="http://www.webuser.co.uk/carsonworkshops/RyanCarson.mp3">listen to the MP3</a> and <a href="http://www.webuser.co.uk/carsonworkshops/RyanCarson.pdf">grab the notes</a>, but for those of you who don&#8217;t have time to listen to the 45 minute talk, I&#8217;m going to summarise here.</p>
+<h3>What does it actually cost?</h3>
+
+<p>When we built <a href="http://www.dropsend.com">DropSend</a>, it was our first enterprise level web app and I had no way to predict how much it would cost to build. Frustratingly, no one would share their figures with me either. So we had to learn the hard way. Yuck. </p>
+
+<p>In order to help you avoid this pain, I&#8217;m going to walk you through, step-by-step, the costs involved in building an enterprise web app, on a budget. I&#8217;m going to be 100% honest about what we spent so you&#8217;ll have a good idea of what kind of budget you&#8217;ll need to set. </p>
+
+<h3>What&#8217;s the big deal? </h3>
+
+<p>Why is it only recently that small companies (Carson Systems is only two full time employees and a set of 3 part-time freelancers) are able to build large scale web apps? Here&#8217;s why:</p>
+
+<ol>
+    <li>Broadband is widespread so your potential audience is larger</li>
+    <li>Average people are comfortable with web apps (Gmail, Online banking, etc)</li>
+    <li>Hardware is dirt cheap</li>
+    <li>Open source platforms are virtually free</li>
+</ol>
+
+<h3>Definition of the terms </h3>
+
+<p>As I&#8217;m talking about &quot;Building enterprise web apps on a budget&quot;, I need to define two things: </p>
+
+<ol>
+    <li>&quot;Enterprise&quot; - This is debatable, but I&#8217;d define it as a mass market product for 1,000+ users</li>
+    <li>&quot;On a budget&quot; - Under &#163;30,000</li>
+</ol>
+
+<p>I&#8217;ve heard some comments about my &#163;30K figure not being &quot;on a budget&quot;. Please keep in mind that this article is aimed at small companies, not freelancers. Most small companies will be able to allocate &#163;30K, over a period of time. It may be possible to bring an enterprise web app to market for less than this, but it will probably be lacking in quality.</p>
+
+<h3>DropSend - Enterprise and on a budget</h3>
+
+<p>I&#8217;d better know what I&#8217;m talking about, if I&#8217;m offering advice, right?! Well, all of this advice is based on us building <a href="http://www.dropsend.com">DropSend</a>, a truly enterprise level web app that was built on a budget: Here&#8217;s a bit about it:</p>
+
+<ul>
+    <li>Used for sending and storing large files that you can&#8217;t email </li>
+    <li>13,083 worldwide users (March 6, 2006) and growing</li>
+    <li>6 servers at 365 Main</li>
+    <li>Desktop apps which use our API</li>
+    <li>Built using PHP, AJAX, MySQL and Linux</li>
+</ul>
+
+<h3>The most important thing</h3>
+
+<p>Before you get started, the most important thing is to <strong>make sure your idea is financially viable</strong>. How can you do this?</p>
+
+<ol>
+    <li>Use common sense. Would you actually get out your credit card and pay for it?</li>
+    <li>Be cautious about your projections and then cut by a further 45%. Are you still in business?</li>
+    <li>Don&#8217;t rely on being acquired. It&#8217;s unwise to base your financial future on something you have zero control over. (In other words, it&#8217;s stupid.)</li>
+</ol>
+
+<h3>What we actually spent</h3>
+
+<ul>
+    <li>Branding and UI design: &#163;5,000 - We worked with <a href="http://www.mutado.com">Ryan Shelton</a> on this. He&#8217;s amazing.<br>
+    </li>
+    <li> Development: &#163;8,500 - We worked with <a href="http://www.plumdigitalmedia.com/">Plum Digital Media</a>, who are crazy talented developers.<br>
+    </li>
+    <li>Mac and PC desktop apps: &#163;2,750<br>
+    </li>
+    <li>XHTML and CSS: &#163;1,600<br>
+    </li>
+    <li>Misc hardware: &#163;500<br>
+    </li>
+    <li>Hosting and maintenance: &#163;900 per month - We work with <a href="http://www.bitpusher.com/">BitPusher</a> for all of our hardware infrastructure and maintenance. I can&#8217;t recommend them enough. They helped us define the hardware architecture, procure the boxes, install, and set everything up. Now that we&#8217;re up and running, they do all our hardware maintenance.<br>
+    </li>
+    <li>Legal fees: &#163;2,630<br>
+    </li>
+    <li>Accounting: &#163;500<br>
+    </li>
+    <li>Linux specialist to setup the dev box: &#163;500<br>
+    </li>
+    <li>Misc: &#163;1,950<br>
+    </li>
+    <li>Trademark: &#163;250<br>
+    </li>
+    <li>Merchant Account: &#163;200<br>
+    </li>
+    <li>Payment Processor: &#163;500 - We use <a href="http://securetrading.net/">Secure Trading</a> - they&#8217;re fab!<br>
+    </li>
+    <li><strong>Total: &#163;25,780 (Approx $45,000 USD)</strong></li>
+</ul>
+
+<h3>Yikes. &#163;25,780? </h3>
+
+<p>If you&#8217;re a small company and &#163;26K sounds like a lot of money, don&#8217;t despair. You will be able to spread these costs out over many months. If you don&#8217;t have that kind of cash right now, don&#8217;t feel bad. It took us almost a year to get the financial stability and save the cash for DropSend.</p>
+
+<h3>How to build your team on a budget</h3>
+
+<p>One of the most expensive parts to building a web app is the team. Here are some of our tips for keeping your costs down:</p>
+
+<ol>
+    <li>Don&#8217;t go for rock stars - go for quiet talent. They&#8217;re cheaper, more fun to work with, and they&#8217;ll actually listen to you.</li>
+    <li>If someone is too expensive, but you <em>really</em> want to work with them, offer them 2 - 5% of the product equity in exchange for a cheaper price. </li>
+    <li>Ask your friends to recommend people they trust. If you pick a bad apple, it will cost you time and money.</li>
+    <li>Outsource. We tried India initially, and it proved to be a disaster. I think this was because I had never managed a project long-distance before. If you already feel comfortable with this, it can save you <em>tons</em> of money.</li>
+</ol>
+
+<h3>Scalability on a budget </h3>
+
+<p>One of the trickiest parts of building an enterprise web app on a budget, is scaling. How can you start with a little bit of hardware/capacity/CPU/backup and scale infinitely?</p>
+
+<p>Here&#8217;s what I&#8217;d recommend: Don&#8217;t start worrying about that until you have to. If you throw a bunch of money at the problem and your app fails, you might as well have burned the cash at the race track.</p>
+
+<p>For DropSend, we almost bought a bunch of IBM Blades and hooked them up to SAN storage. I&#8217;m SO glad we didn&#8217;t go this route. </p>
+
+<p>So here are three basic tips regarding scalability on a budget:</p>
+
+<ol>
+    <li>Buy just enough hardware to launch</li>
+    <li>Build your app so it easily scales. DropSend is a great example of this. When we need more diskspace, we just add a line to the config file, plug in another box, re-deploy, and BAM, we&#8217;ve got more diskspace. </li>
+    <li>Plan for scaling, but don&#8217;t obsess</li>
+</ol>
+
+<h3>Next time &#8230;</h3>
+
+<p>In Part 2 of this article, I&#8217;ll be covering:</p>
+
+<ol>
+    <li>Tips for staying on budget</li>
+    <li>The importance of pessimism</li>
+    <li>Budgets for legal costs</li>
+    <li>How to save money with free tools</li>
+    <li>How to do marketing for free</li>
+    <li>Why venture capital doesn&#8217;t usually make sense for web apps </li>
+</ol>
+
+<p>Thanks for reading. I hope we&#8217;ve saved you some of the pain and suffering we went through when we built DropSend. On a side note, I&#8217;ve just finished 37signals new book <a href="https://gettingreal.37signals.com/">Getting Real</a>, and it&#8217;s got some more excellent ideas on how to build on a budget. </p>
+
+<p>As always, feel free to agree or disagree below. See you next time! </p>
+<div><a href="http://feeds.feedburner.com/~f/37signals/beMH?a=WerHE4Xv"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=WerHE4Xv" border="0"></a> <a href="http://feeds.feedburner.com/~f/37signals/beMH?a=oZIZcVTx"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=oZIZcVTx" border="0"></a></div></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item88'><a href='http://iunknown.com'>John Lam on Software</a> <br></br> 03/07/2006 01:00 AM</span><span class='itemtitle em'><a href = 'http://del.icio.us/drjflam#2006-03-06'>Links for 2006-03-06 [del.icio.us]</a></span>
+<div class='itemcontent clearfix'><ul>
+<li><a href="http://video.google.com/videoplay?docid=-6909078385965257294">&quot;All Marketers are Liars&quot; - Seth Godin speaks at Google</a><br>
+Wow. Wow. Wow. One of the most insightful talks that I've seen this year.</li>
+</ul><img src="http://feeds.feedburner.com/LessIsBetter?g=114"></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item89'><a href='http://www.gamesetwatch.com/'>GameSetWatch</a> <br></br> 03/07/2006 09:04 AM</span><span class='itemtitle em'><a href = 'http://www.gamesetwatch.com/2006/03/plasma_pong_jerks_around_with.php'>Plasma Pong Jerks Around With Classic Ball-Bat</a></span>
+<div class='itemcontent clearfix'><p><img alt="ppong.jpg" hspace="5" align="left" style="border:thin black solid" src="http://www.gamesetwatch.com/ppong.jpg"> The rather fun <a href="http://www.fun-motion.com">Fun-Motion</a> physics game blog has <a href="http://www.fun-motion.com/physics-games/plasma-pong/">a mini-review, complete with video</a>, of Plasma Pong, "a mesmerizing freeware title by Steve Taylor, a student at <a href="http://www.gmu.edu/">George Mason University</a>. It combines a cutting-edge realtime fluid dynamics simulation with the game structure of Pong."</p>
+
+<p>It's explained of the title: "There isn&#8217;t a whole lot to say about the gameplay in <a href="http://www.plasmapong.com/">Plasma Pong</a>, really. The game structure mirrors that of <a href="http://www.klov.com/game_detail.php?game_id=9074">the original Pong</a>: You score if the ball makes it past your opponent&#8217;s paddle and vice versa... The right-mouse button creates a vacuum and sucks the ball towards you. This is a great way to safely catch the ball, as the fluid dynamics tend to create sudden unpredictable movements as the ball gets caught in eddies and currents."</p>
+
+<p>But wait, there's more: "Left-mouse button fires plasma which shoots into the playfield. It can be used to push the ball for some extra speed, but also modify the currents. If you can succesfully create an eddy near the opponent&#8217;s side you can usually score when the ball makes sudden last-second movements." Excellent stuff, and well worth checking out.</p>
+<div><a href="http://feeds.feedburner.com/~f/gamesetwatch?a=ptMe6O1p"><img src="http://feeds.feedburner.com/~f/gamesetwatch?i=ptMe6O1p" border="0"></a> <a href="http://feeds.feedburner.com/~f/gamesetwatch?a=h4njXw9S"><img src="http://feeds.feedburner.com/~f/gamesetwatch?i=h4njXw9S" border="0"></a> <a href="http://feeds.feedburner.com/~f/gamesetwatch?a=JEhxR2HM"><img src="http://feeds.feedburner.com/~f/gamesetwatch?i=JEhxR2HM" border="0"></a></div><img src="http://feeds.feedburner.com/gamesetwatch?g=169"></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item90'><a href='http://ajaxian.com'>Ajaxian &#187; Front Page</a> <br></br> 03/08/2006 10:16 AM</span><span class='itemtitle em'><a href = 'http://ajaxian.com/archives/laszlo-demonstrates-ajax-runtime'>Laszlo Demonstrates Ajax Runtime</a></span>
+<div class='itemcontent clearfix span5'>	<p>Back in December we discussed how <a href="http://ajaxian.com/archives/rifelaszlo-131-released">Laszlo was going to target Ajax</a> as well as Flash. Several people wrote in to tell us that yesterday, Laszlo released a demo of their Ajax renderer.</p>
+	<p><a href="http://www.openlaszlo.org"><img src="http://ajaxian.com/wp-content/images/laszlo_site.png" alt="OpenLaszlo Supports Ajax" border="0" width="575" height="325"></a></p>
+	<p>Over at <a href="http://labs.openlaszlo.org">labs.openlaszlo.org</a>, you can check out both Flash and Ajax versions of "LZPIX", a graphical front-end to Flickr. It's pretty amazing how similar both versions are, and how many effects they were able to give the Ajax version. Can you tell whether the screenshot below is the Ajax or the Flash version?</p>
+	<p><a href="http://ajaxian.com/wp-content/images/ajax_lzpix.png"><img src="http://ajaxian.com/wp-content/images/ajax_lzpix.png" alt="Ajax Laszlo" border="0" width="800" height="640"></a></p>
+	<p>Play around with both versions:</p>
+	<p><a href="http://labs.openlaszlo.org/lzpix-flash/">Flash Version</a></p>
+	<p><a href="http://labs.openlaszlo.org/lzpix-dhtml/">Ajax Version</a></p>
+	<p><a href="http://labs.openlaszlo.org/lzpix-source/">Source Code</a></p>
+	<p>By the way, the above screenshot is the Ajax version -- below is the Flash version:</p>
+	<p><a href="http://ajaxian.com/wp-content/images/flash_lazpix.png"><img src="http://ajaxian.com/wp-content/images/flash_lazpix.png" alt="Flash Laszlo" border="0" width="800" height="640"></a>
+</p>
+
+<div><a href="http://feeds.feedburner.com/~f/ajaxian?a=R0ZzwFVY"><img src="http://feeds.feedburner.com/~f/ajaxian?i=R0ZzwFVY" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=2NutuLl0"><img src="http://feeds.feedburner.com/~f/ajaxian?i=2NutuLl0" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=TtFZMoCx"><img src="http://feeds.feedburner.com/~f/ajaxian?i=TtFZMoCx" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=VEvB9fPR"><img src="http://feeds.feedburner.com/~f/ajaxian?i=VEvB9fPR" border="0"></a></div></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item91'><a href='http://blog.drawn.ca/'>Drawn</a> <br></br> 03/08/2006 01:03 PM</span><span class='itemtitle em'><a href = 'http://drawn.ca/2006/03/08/stephanie-lostimolo/'>Stephanie LoStimolo</a></span>
+<div class='itemcontent clearfix span5'><p><img src="http://drawn.ca/wordpress/wp-content/images/lostimolo.jpg" width="450" height="287" alt=""></p>
+
+<p>Richard writes in to suggest we feature <a href="http://www.lostimolo.com/main.html">Stepahnie LoStimolo</a>.  He says she has &#8220;an imagination that is wet and soft like a tongue.&#8221;  Well, I&#8217;m not sure exactly what that means, but I do know that Stephanie has some great work on her site.  Her portfolio is mostly filled with fantasy and concept work (both illustration and design), and her resume includes Lucasfilm and Paramount Pictures.</p>
+</div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item92'><a href='http://www.kevintwodotoh.com'>kevintwodotoh.com</a> <br></br> 03/09/2006 10:07 AM</span><span class='itemtitle em'><a href = 'http://kevintwodotoh.com/2006/03/09/software/multi-platform-im-on-windows-mobile-5-for-free.html'>Multi-platform IM on Windows Mobile 5 for free</a></span>
+<div class='itemcontent clearfix span5'>	<div align="center"><img src="http://www.kevintwodotoh.com/wp-content/images/imov.JPG" alt="imov messenger"></div>
+Got a great question <a href="http://kevintwodotoh.com/2006/03/01/software/first-apps-on-a-pocketpc-what-do-you-install.html#comment-314">from Brandon about using AIM on the new XV6700</a> and I found <a href="http://movsoftware.com/products/imov/imov.htm">an interesting free application</a> that claims to support not just AIM, but also ICQ, MSN, Yahoo and Google Talk as well. imov Messenger from movsoftware runs on both the PocketPC and the Windows Mobile 5 platforms and doesn&#8217;t cost a dime. I don&#8217;t have IM accounts on all of the supported platforms, but I did test the software on both AIM and MSN using my EV-DO connection. imov works as claimed and is relatively simple to configure. I did struggle to find a Jabber server that supported all of the &#8220;chat-forms&#8221;, but movsoftware has <a href="http://www.movsoftware.com/server/default.htm">a fairly complete list of servers</a> for you to try. imov is decent IM client for any Windows Mobile 5 phone with a keyboard such as the XV6700, Palm Treo 700w, i-mate K-JAM or Jas-Jar.
+
+</div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item93'><a href='http://www.gamesetwatch.com/'>GameSetWatch</a> <br></br> 03/12/2006 05:57 PM</span><span class='itemtitle em'><a href = 'http://www.gamesetwatch.com/2006/03/flooded_with_interest_about_fl.php'>Flooded With Interest About Fl0w </a></span>
+<div class='itemcontent clearfix'><p><img alt="fl0w.gif" hspace="5" align="left" style="border:thin black solid" src="http://www.gamesetwatch.com/fl0w.gif"> Worth throwing out, even as it's currently marauding up <a href="http://www.digg.com">Digg</a>, is the <a href="http://intihuatani.usc.edu/cloud/flowing/">Flash game named Fl0w</a>, which also comes in <a href="http://intihuatani.usc.edu/cloud/flowing/flow03112006.zip">downloadable PC/Mac formats</a>, created by USC's Jenova Chen with  Nicholas Clark as part of their MFA thesis.</p>
+
+<p>The <a href="http://jenovachen.com/flowingames/forum/">'Flow in Games' messageboards</a> are rapidly filling up, and the ever-dependable Jayisgames also <a href="http://jayisgames.com/archives/2006/03/flow_1.php">picked up on the title</a>, describing it as "...a mesmerizing game of primordial life, evolution and survival. Dive deep into the wild blue to seek out and consume other organisms on your path to simple cell nirvana." Mm, cell nirvana.</p>
+
+<p>In fact, running a vaguely Spore-like concept against Electroplankton-ish visuals, the neat-looking abstract title, made by one of the creators of <a href="http://intihuatani.usc.edu/cloud/">Cloud</a>, the innovative IGF Student Showcase winner, has very simple instructions, to wit: " What am I supposed to do? * Dive deep into the space, eat, and evolve." We like it a lot.</p>
+<p><map name="google_ad_map_9PKfF3-yCmK14LZqRnVQHPIrmOE_"><area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/9PKfF3-yCmK14LZqRnVQHPIrmOE_?pos=0" coords="1,2,367,28"><area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"></map><img usemap="http://www.gamesetwatch.com/#google_ad_map_9PKfF3-yCmK14LZqRnVQHPIrmOE_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-3896033488060561&amp;channel=feedburner-rss&amp;output=png&amp;cuid=9PKfF3-yCmK14LZqRnVQHPIrmOE_&amp;url=http%3A%2F%2Fwww.gamesetwatch.com%2F2006%2F03%2Fflooded_with_interest_about_fl.php"></p>
+<div><a href="http://feeds.feedburner.com/~f/gamesetwatch?a=OWT2dwHt"><img src="http://feeds.feedburner.com/~f/gamesetwatch?i=OWT2dwHt" border="0"></a> <a href="http://feeds.feedburner.com/~f/gamesetwatch?a=Uut1eqk7"><img src="http://feeds.feedburner.com/~f/gamesetwatch?i=Uut1eqk7" border="0"></a> <a href="http://feeds.feedburner.com/~f/gamesetwatch?a=ZfUXWw5L"><img src="http://feeds.feedburner.com/~f/gamesetwatch?i=ZfUXWw5L" border="0"></a></div><img src="http://feeds.feedburner.com/gamesetwatch?g=196"></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item94'><a href='http://37signals.com/svn/posts'>Signal vs. Noise</a> <br></br> 03/13/2006 08:58 AM</span><span class='itemtitle em'><a href = 'http://37signals.com/svn/archives2/the_cost_of_bootstrapping_your_app_the_figures_behind_dropsend_part_two_.php'>The  Cost of Bootstrapping Your App: The Figures Behind DropSend (part two) </a></span>
+<div class='itemcontent clearfix'><h3>Just to recap &#8230; </h3>
+
+<p>This is part two of a two-part series, based on a talk I recently did  at <a href="http://www.carsonworkshops.com/summit">The Future of Web Apps</a> in London (an 800 person event we put together, aimed at encouraging European developers to get rockin&#8217;). In part one, I covered:</p>
+
+<ol>
+    <li>Making sure your app is financially viable</li>
+    <li>The figures of what we actually spent on <a href="http://www.dropsend.com">DropSend</a></li>
+    <li>How to build your team on a budget<br>
+        and
+    </li>
+    <li>How to scale on a budget</li>
+</ol>
+
+<p>You can <a href="http://www.webuser.co.uk/carsonworkshops/RyanCarson.mp3">listen to the MP3</a> and <a href="http://www.webuser.co.uk/carsonworkshops/RyanCarson.pdf">grab the notes</a>, but for those of you who don&#8217;t have time to listen to the 45 minute talk, here&#8217;s part two.</p>
+<h3>How to keep it cheap </h3>
+
+<p>When you&#8217;ve got a small budget, you need to watch every penny. Here are a few tips that saved us a load of cash:</p>
+
+<ol>
+    <li>No stationary. For some crazy reason I thought it would be <em>really</em> cool to have DropSend business cards and letterhead. There goes &#163;1000. Dumb.</li>
+    <li>Don&#8217;t get new machines. You don&#8217;t really need a new laptop, no matter how bad your G3 iBook seems</li>
+    <li>No luxuries - It may be tempting to splurge some cash on nice dinners for clients or business class seats, but forget about it. It&#8217;s not necessary and it&#8217;s not going to help you afford the web app any time soon</li>
+    <li>Cut your features. The less complex your app is, the quicker you can build it. Not to mention that it&#8217;ll make it easier to use</li>
+    <li>Check yourself before you spend &#163;25. Anything above this, ask yourself if it&#8217;s <em>really</em> necessary</li>
+    <li>Barter your services. Does one of your suppliers need a website? Great! Offer to trade them a website for their services.</li>
+    <li>Use IM or Skype instead of the phone</li>
+    <li>Do as much as you can yourself before your outsource. For DropSend, we did: wire framing, marketing, testing, bookkeeping and copy writing</li>
+    <li>Get friends to help with usability testing. For DropSend, we offered some buddies free beer and pizza to help out, which was a hell of a lot cheaper than formal user testing (which I&#8217;d avoid anyway).</li>
+    <li>Shop around for everything. Our first hosting quote was &#163;12,000 per month!</li>
+</ol>
+
+<h3>Pessimism has it&#8217;s place </h3>
+
+<p>I want to encourage you as much as possible, but being occasionally pessimistic is important. If you <em>plan</em> for the worst in your cash flow predictions, and you can still stay in business, you&#8217;re good to go. I would plan for the following two things to happen:</p>
+
+<ol>
+    <li>You&#8217;ll go 10% over budget</li>
+    <li>You&#8217;ll go 3 months over schedule</li>
+</ol>
+
+<p>Just plan on these things and make sure your cash flow can survive it. </p>
+
+<h3>Holy crap! Lawyers are expensive</h3>
+
+<p>One thing that really caught us off guard was how much it costs to take care of the legal stuff. Sure, we need a couple contracts written up, but how much could it be? &quot;A lot&quot;, was the answer. Here&#8217;s the bare minimum you&#8217;ll need for your app:</p>
+
+<ol>
+    <li>Terms of Service: &#163;1000</li>
+    <li>Contracts for freelancers: &#163;800</li>
+    <li>Privacy policy: &#163;15 (You can find these online)</li>
+</ol>
+
+<p>A great way to cut down on these costs is to barter with your lawyer. Offer them a free site in return for a Terms of Service document. Also, take them up on that 1-hour free consultation!</p>
+
+<p>No matter how much you&#8217;re tempted, don&#8217;t just copy and paste your competitor&#8217;s legal documents. If something goes wrong, you could jeopardize your whole company.</p>
+
+<h3>Cheap software is your friend</h3>
+
+<p>A fabulous way to cut costs is to use cheap (or free) software to help you manage the project. We use the following:</p>
+
+<ol>
+    <li>Project management: <a href="http://www.basecamphq.com">Basecamp</a></li>
+    <li>Bug tracker: <a href="http://www.edgewall.com/trac/">Trac</a> (you can subscribe to an RSS feed of commits - super cool) </li>
+    <li>Meetings: <a href="http://www.skype.com/">Skype</a> and <a href="http://www.aol.co.uk/aim/">AIM</a></li>
+    <li>Version control: <a href="http://subversion.tigris.org/">Subversion</a></li>
+    <li>LAMP (Linux, Apache, MySQL and PHP)</li>
+</ol>
+
+<h3>Cheap hardware is your pal</h3>
+
+<p>In order to cut costs and speed things up, we bought a cheap &#163;200 Linux box from the local computer store and used it as our dev box. Once the co-lo was setup, we moved it into there, but starting out on a cheap dev box an easy way to get things moving.</p>
+
+<h3>How to not spend money on marketing</h3>
+
+<p>I&#8217;d highly recommend not spending any money on marketing <em>initially</em>. Once your app is profitable, feel free to plow some money into traditional advertising. In the meantime though, take advantage of:</p>
+
+<ol>
+    <li>Blogs</li>
+    <li>Word of mouth</li>
+    <li>Making your app viral in some respect (but be careful not to annoy people)</li>
+    <li>Write articles or books</li>
+</ol>
+
+<h3>What about venture capital?</h3>
+
+<p>You need a <em>very</em> good reason to seek venture capital in today&#8217;s market. However, there are certain reasons why it might be a good idea. Here&#8217;s a couple scenarios where you might need VC: </p>
+
+<ol>
+    <li>You need to expand very quickly and you can&#8217;t afford to</li>
+    <li>You need very expensive hardware</li>
+    <li>You need to have a physical presence in more than one place </li>
+    <li>You need important connections to arrange partnerships that a VC firm can help you with</li>
+</ol>
+
+<p>However, if you don&#8217;t have to do one of those two things, why would you give away 25 - 50% of your company?</p>
+
+<h3>If you don&#8217;t remember anything I just said &#8230;  </h3>
+
+<p>Remember these:</p>
+
+<ol>
+    <li>Don&#8217;t spend money unless you absolutely have to</li>
+    <li>Bring down the costs by bartering</li>
+    <li>Cut your features so you can build quickly</li>
+    <li>Be realistic, if not slightly pessimistic, about your cash flow</li>
+    <li>Plan for scalability but don&#8217;t obsess</li>
+</ol>
+
+<h3>Thanks &#8230;</h3>
+
+<p>Thank you for listening. I hope we&#8217;ve saved you some of the pain and suffering we went through when we built DropSend. On a side note, I&#8217;ve just finished 37signals new book <a href="https://gettingreal.37signals.com/">Getting Real</a>, and it&#8217;s got some more excellent ideas on how to build on a budget. Good luck!</p>
+
+<p>As always, feel free to agree or disagree below.  </p>
+<div><a href="http://feeds.feedburner.com/~f/37signals/beMH?a=3cpdIZCk"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=3cpdIZCk" border="0"></a> <a href="http://feeds.feedburner.com/~f/37signals/beMH?a=PbTZpzqC"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=PbTZpzqC" border="0"></a></div></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item95'><a href='http://ajaxian.com'>Ajaxian &#187; Front Page</a> <br></br> 03/13/2006 11:06 AM</span><span class='itemtitle em'><a href = 'http://ajaxian.com/archives/popurlscom-the-latest-internet-buzz'>Popurls.com - The Latest Internet Buzz</a></span>
+<div class='itemcontent clearfix span5'><p>
+<a href="http://popurls.com">Popurls.com</a> looks to provide a simple, clean interface for a portal to the "most popular" urls from the hotest sites out there as soon as they break. Among the sites on the list, there's all well-known names - <a href="http://www.digg.com">digg.com</a>, <a href="http://www.del.icio.us">del.icio.us</a>, <a href="http://www.furl.net">furl.net</a> - and some others that are a bit less used, but up-and-coming none the less (such as <a href="http://www.newsvine.com">Newsvine</a> and <a href="http://www.topix.net">Topix.net</a>).
+</p>
+	<p>
+<a href="http://popurls.com/">The interface</a> is simple, laid out in columns for each of the sites, and full-width areas for the two more graphical of the sites included - flickr.com and youtube.com. For the sites that provide more detail in their feeds than just the title of the post, they make use of the <a href="http://moofx.mad4milk.net/">moo.fx library</a>'s effects to slide out the extra content when the mouse is over the topic's title.
+</p>
+	<p>
+The site also refreshes to go out and fetch the latest headlines from each source and updates the page to reflect the updates pulled from the feeds. There's also the option (on the text feeds) to view "More" of the entries for each list, just in case you missed some. The site hit the front page of <a href="http://digg.com/links/popurls.com_is_live_-_the_new_source_for_the_latest_web-buzz">digg.com</a> and was highly complimented on its clean interface and simple use of Javascript effects to make a usable, useful, relevant site.
+</p>
+	<p><center><br>
+<a href="http://popurls.com"><img src="http://ajaxian.com/wp-content/images/popurls.gif" alt="" border="0" width="420" height="298"></a><br>
+</center>
+</p>
+
+<div><a href="http://feeds.feedburner.com/~f/ajaxian?a=907Wwg0o"><img src="http://feeds.feedburner.com/~f/ajaxian?i=907Wwg0o" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=keWa5zws"><img src="http://feeds.feedburner.com/~f/ajaxian?i=keWa5zws" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=KJYJrpyJ"><img src="http://feeds.feedburner.com/~f/ajaxian?i=KJYJrpyJ" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=e5q8fvN3"><img src="http://feeds.feedburner.com/~f/ajaxian?i=e5q8fvN3" border="0"></a></div></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item96'><a href='http://www.kk.org/cooltools/'>Cool Tools</a> <br></br> 03/13/2006 11:24 AM</span><span class='itemtitle em'><a href = 'http://www.kk.org/cooltools/archives/001164.php'>Cuboro</a></span>
+<div class='itemcontent clearfix'><p><img alt="cuboro2.jpg" src="http://www.kk.org/cooltools/archives/cuboro2.jpg" width="250" height="194"> </p>
+
+<p>This is the best toy I have seen since Lego. I recently purchased a set for my 3 year old son, and we both have been having a blast with it ever since. The basic idea is simple: marbles and a track. The interesting thing is that the track is built out of individual wooden blocks with curves and channels cut into them, allowing you to create<br>
+a track of whatever shape your imagination can conceive. The marbles are moved along strictly by gravity, falling from one level to another and cutting back and forth through hidden tunnels.</p>
+
+<p>The company is based in Switzerland, but sets are available from several US retailers. There are several starter sets, plus add-on kits that allow you to build more complicated structures. I started with the Cuboro Standard, and recently added the Cugolino set. Although Cuboro is a bit pricey for a toy, the manufacturing quality is<br>
+exceptional and you get what you pay for.</p>
+
+<p>-- Kurt Thearling</p>
+
+<p>Cuboro<br>
+$110 starter set<br>
+$153 standard set<br>
+Available from <a href="http://www.oh-toys.com/Shop/CuboroStarterSets/tabid/478/Default.aspx">Oh! Toys</a></p>
+
+<p>Manufactured by <a href="http://www.cuboro.ch/cuboro/e">Cuboro</a></p>
+
+<p><img alt="cuboro1.jpg" src="http://www.kk.org/cooltools/archives/cuboro1.jpg" width="280" height="284"></p>
+
+<p><br>
+ </p></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item97'><a href='http://ajaxian.com'>Ajaxian &#187; Front Page</a> <br></br> 03/14/2006 09:26 AM</span><span class='itemtitle em'><a href = 'http://ajaxian.com/archives/ajax-templating-seperation-of-layout-and-logic'>Ajax Templating - Separation of Layout and Logic</a></span>
+<div class='itemcontent clearfix span5'><p>
+In <a href="http://borkweb.com/story/ajax-templating-and-the-separation-of-layout-and-logic">this informative blog entry</a>, BorkWeb.com shares a method for creating a templating system generated wholely with Ajax and PHP.
+</p>
+	<blockquote><p>
+While Ajax is the cause for the article, the heavy focus is on templating. For the past few years I have been using XTemplate as my templating library (I'm a PHP buff) and have been happily separating my logic from my layout...unitl I ran smack dab into the power of Javascript. My PHP still kept its separation from HTML as is the purpose of XTemplate, but it was my HTML that became littered with little nuggets of Javascript all over the place. No matter the method to my Ajax madness, this was my problem.
+</p></blockquote>
+	<p>
+They <a href="http://borkweb.com/story/ajax-templating-and-the-separation-of-layout-and-logic">step through the process</a>, noting first what templating is really defined as and how it can be useful to just about anyone. They give their examples in PHP, but it can easily be conformed to just about any other language quickly and easily. They set up a templating situation where all seems ideal, except, of course, for one small problem - dynamic control of (javascript) user events in HTML elements on the page (onClick/onMouseOver/etc).
+</p>
+	<p>
+His <a href="http://borkweb.com/story/ajax-templating-and-the-separation-of-layout-and-logic">solution</a>? He uses the <a href="http://bennolan.com/behaviour/">Behaviour libray</a> that's built on top of everyone's favorite Javascript library, <a href="http://borkweb.com/story/prototype-makes-javascript-painless">Prototype</a>. With a few quick lines of Javascipt, a bulleted list is created so that, onClick the item selected will be removed from the list.
+</p>
+	<p>
+You can find out more about each of the projects mentioned from their homepages: </p>
+	<ul>
+	<li><a href="http://xtpl.sf.net/">XTemplates</a> (PHP Templating Library)
+</li>
+	<li><a href="http://prototype.conio.net/">Prototype</a> (Ajax/Javascript toolkit)
+</li>
+	<li><a href="http://script.aculo.us/">Script.aculo.us</a> (DOM manipulation library built on Prototype)
+</li>
+	<li><a href="http://www.ripcord.co.nz/behaviour/">Behaviour</a> (a Javascript event library)
+</li>
+</ul>
+	
+	<p>
+<img src="http://borkweb.com/wp-content/uploads/2006/03/ajax_with_templating.gif">
+</p>
+
+<div><a href="http://feeds.feedburner.com/~f/ajaxian?a=s57Pcvk9"><img src="http://feeds.feedburner.com/~f/ajaxian?i=s57Pcvk9" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=DU0earAz"><img src="http://feeds.feedburner.com/~f/ajaxian?i=DU0earAz" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=J4Nffjxn"><img src="http://feeds.feedburner.com/~f/ajaxian?i=J4Nffjxn" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=IyEnAvEM"><img src="http://feeds.feedburner.com/~f/ajaxian?i=IyEnAvEM" border="0"></a></div></div></div></div><div class='row'>
+<div class='item'><span class='itemorigin clearfix span8' id = 'item98'><a href='http://37signals.com/svn/posts'>Signal vs. Noise</a> <br></br> 03/14/2006 03:15 PM</span><span class='itemtitle em'><a href = 'http://37signals.com/svn/archives2/sunspots.php'>Sunspots</a></span>
+<div class='itemcontent clearfix'><p>Transmissions spotted elsewhere:</p>
+
+<dl>
+<dt><a href="http://ajaxian.com/archives/audible-ajax-16-march-state-of-ajax">Ajaxian podcast with Jamis</a>
+<dd>Includes "Mr." Jamis Buck talking about the scalability of Ajax based chat applications like Campfire.
+
+<dt><a href="http://www2.hermanmiller.com/celleexperience/high_movie.html">Trippy informative chair video from Herman Miller</a>
+<dd>The fun starts about 1/3rd of the way in when body cells start DJing, giving massages, and exploring outer space.
+
+<dt><a href="http://gladwell.typepad.com/gladwellcom/2006/03/thoughts_on_fre.html">Gladwell: &quot;I prefer to think of Freakonomics not as contradicting my argument in Tipping Point, but as completing it.&quot;</a>
+<dd>&quot;Levitt pretends he has refuted the Broken Windows explanation. He hasn&#39;t at all. In fact, to the extent that he concedes the huge role played by the expansion of police departments in the 1990&#39;s, he tacitly supports the Broken Windows theory.&quot;
+
+<dt><a href="http://www.coudal.com/cghfilm.php">Copy Goes Here</a>
+<dd>A fun film by our officemates at Coudal Partners. Includes a (Wes Andersonish) cameo by Jason and Ryan and a peek at the 37signals workplace.
+
+<dt><a href="http://www.nytimes.com/2006/03/12/sports/baseball/12bowa.html?ex=1299819600&amp;en=0206e5d02a5b8ac1&amp;ei=5090&amp;partner=rssuserland&amp;emc=rss">Larry Bowa on taking risks</a>
+<dd>Dig this quote from Yankees&#39; Third Base Coach Larry Bowa on taking calculated risks: &quot;If you coach third and you don&#39;t get anybody thrown out, you&#39;re definitely not doing a good job.&quot;
+</dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dl><dl>
+<dt><a href="http://www.keeganjones.com/widgets/tada/">Ta-da Lists Widget</a>
+<dd>A free Dashboard widget for OS X that offers quick access to Ta-da Lists.
+
+<dt><a href="http://www.flickr.com/photos/81979724@N00/107002183/in/set-72057594073728354/">Photo of B20 Next Net 25 Conference</a>
+<dd>Who says web conferences aren't diverse?
+
+<dt><a href="http://www.nytimes.com/2006/03/12/fashion/sundaystyles/12silicon.html?ex=1299819600&amp;en=6009a7b1cde6630a&amp;ei=5090&amp;partner=rssuserland&amp;emc=rss">Silicon Alley's comeback</a>
+<dd>Why is this time different for Silicon Alley? Companies are being cheap. &quot;...The current crop of Alley executives can&#39;t let a conversation go by without pointing out how utterly miserly they are.&quot;
+
+<dt><a href="http://en.wikipedia.org/wiki/Ramanujan">Srinivasa Ramanujan</a>
+<dd>&quot;The man who knew infinity.&quot;
+
+<dt><a href="http://en.wikipedia.org/w/index.php?title=David_Heinemeier_Hansson&amp;diff=38825579&amp;oldid=37469420">David's Wikipedia entry</a>
+<dd>It really says this: &quot;David is widely considered to be extremely arrogant.&quot;
+
+<dt><a href="http://jasonspage.net/sectionj/2006/03/11/sxsw-day-1/">Summary of Jim Coudal &amp; Jason Fried presentation at 2006 SXSW</a>
+<dd>A blogger summarizes J &amp; J&#39;s talk about using yourself as a target market and building big things with small teams (<a href="http://www.willpate.org/sxsw-jason-fried-and-jim-coudal">here's another summary too</a>).
+</dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dl>
+<div><a href="http://feeds.feedburner.com/~f/37signals/beMH?a=z6DEqIJu"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=z6DEqIJu" border="0"></a> <a href="http://feeds.feedburner.com/~f/37signals/beMH?a=2I4TFWxf"><img src="http://feeds.feedburner.com/~f/37signals/beMH?i=2I4TFWxf" border="0"></a></div></div></div></div><div class='row'>
+<div class='item alternatelook'><span class='itemorigin clearfix span8' id = 'item99'><a href='http://ajaxian.com'>Ajaxian &#187; Front Page</a> <br></br> 03/15/2006 09:12 AM</span><span class='itemtitle em'><a href = 'http://ajaxian.com/archives/live-clipboard-data-rich-copypaste-for-the-web'>Live Clipboard - Data-Rich Copy/Paste for the Web</a></span>
+<div class='itemcontent clearfix span5'><p>
+Via <a href="http://blog.brains4all.com/brainblog/archives/2006/03/copypasteweb_1.html">this post</a> on the Brains4All blog, there&#8217;s some information about a slick little Javascript-based tool created by <a href="http://conferences.oreillynet.com/cs/et2006/view/e_spkr/559">Ray Ozzie</a> tentatively named &#8220;Live Clipboard&#8221;, a data-rich copy/paste method for the web.
+</p>
+	<blockquote>
+	<p>
+<a href="http://spaces.msn.com/rayozzie/blog/cns!FB3017FBB9B2E142!285.entry">Ozzies&#8217; idea</a> is to have Copy And Paste JavaScript powered XML allowing users to copy and paste XML meta data from site to site from site to pc or vice versa. The idea is simple enough, use JavaScript to trigger events as XML data is read from or posted to the clipboard. Ozzie is calling it Live Clipboard to coincide with Microsoft Live efforts. I&#8217;d like to call it CAPJAPOX :).
+</p>
+	<p>
+The implementation is browser independent. Independent as in works on Firefox too. <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/clipboardexample.html">The prototype</a> Ozzie demoed is released under a shared commons license. There is an actual <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/clipboardexample.html">working demo page</a> and there are <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/screencast/liveclipdemo.html">some videos</a> on line. The videos deal with mock-ups, so I doubt if there is any working technology behind them. Still as an idea its concept is interesting. There is also Ozzies&#8217; own lengthy <a href="http://spaces.msn.com/rayozzie/blog/cns!FB3017FBB9B2E142!285.entry">blog entry</a> about the concept, <a href="http://spaces.msn.com/rayozzie/blog/cns!FB3017FBB9B2E142!285.entry">wiring the web</a>.
+</p>
+	</blockquote>
+	<p>
+You definitely do not want to miss <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/clipboardexample.html">messing with this demo</a> - for anyone that&#8217;s ever been frustrated at the copy/paste limitations that browsers have (nothing more that just text really), this kind of thing just might be the answer. Simply load the page up, right-click on one of the orange &#8220;scissor boxes&#8221; with data in it, select &#8220;Copy&#8221;, move down to the bottom of that list, right-click on the empty block&#8217;s &#8220;scissor box&#8221; and choose &#8220;Paste&#8221;. And, if you want to see something very cool, and maybe a little scary, &#8220;Copy&#8221; one from a Firefox window, open IE, and &#8220;Paste&#8221; it into the block there.
+</p>
+	<p>
+For anyone that wants to get this kind of thing working over on there site, there&#8217;s a great <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/techPreview.html">technical introduction</a> posted to step you through the process (including sample code and links to the libraries).
+</p>
+	<p><center><img src="http://ajaxian.com/wp-content/images/copy_paste_web.gif" alt="" border="0" width="400" height="230"></center>
+</p>
+
+<div><a href="http://feeds.feedburner.com/~f/ajaxian?a=OvPZRiAi"><img src="http://feeds.feedburner.com/~f/ajaxian?i=OvPZRiAi" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=RAzFPiOJ"><img src="http://feeds.feedburner.com/~f/ajaxian?i=RAzFPiOJ" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=cxtI3Jbm"><img src="http://feeds.feedburner.com/~f/ajaxian?i=cxtI3Jbm" border="0"></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=2RBxJMN3"><img src="http://feeds.feedburner.com/~f/ajaxian?i=2RBxJMN3" border="0"></a></div></div></div></div><h2><div align='left' class=PageTitle>Page 4 of 66</div><div align='right' class=PageNav><a href='DougStarred003.html'> <<3 </a> - <a href='DougStarred005.html'> 5>> </a></div></h2></div></body></html>
